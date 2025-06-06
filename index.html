@@ -1,75 +1,357 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestra Boda</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juandi &amp; Dani - Nuestra Boda</title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1 id="main-title">¡Nos Casamos!</h1>
-            <div id="countdown" class="countdown"></div>
-            <button id="lang-toggle">English</button>
+  <header class="navbar">
+    <div class="container navbar-content">
+      <div class="logo">J &amp; D</div>
+      <nav class="nav-menu" aria-label="Main navigation">
+        <a href="#banner" class="nav-link">Inicio</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#detalles" class="nav-link">Detalles</a>
+        <a href="#viajes" class="nav-link">Viajes</a>
+        <a href="#regalos" class="nav-link">Regalos</a>
+        <a href="#confirmacion" class="nav-link">Confirmación</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+      <button id="lang-toggle" aria-label="Cambiar idioma" class="lang-toggle">
+        <span class="globe-icon" aria-hidden="true">🌐</span> ES
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Banner -->
+    <section id="banner" class="banner-section">
+      <div class="banner-card">
+        <p class="banner-subtitle" id="banner-subtitle">RESERVA LA FECHA</p>
+        <h1 class="banner-title" id="banner-title">Juandi &amp; Dani</h1>
+      </div>
+    </section>
+
+    <!-- Countdown -->
+    <section class="countdown-section">
+      <div class="container countdown-container">
+        <div class="countdown-card">
+          <span class="countdown-icon" aria-hidden="true">⏱️</span>
+          <p class="countdown-label" id="countdown-label">Cuenta Regresiva</p>
+          <div id="countdown" class="countdown-time" aria-live="polite">
+            0 Días 0 Hrs 0 Min 0 Seg
+          </div>
         </div>
-    </header>
-
-    <section id="itinerary" class="section">
-        <h2 id="itinerary">Itinerario</h2>
-        <p>¡Acompáñanos en la ceremonia y celebración!</p>
-        <ul>
-            <li>2:00 PM - Ceremonia</li>
-            <li>4:00 PM - Recepción</li>
-            <li>7:00 PM - Fiesta</li>
-        </ul>
-    </section>
-
-    <section id="travel" class="section">
-        <h2 id="travel">Alojamiento y Viaje</h2>
-        <p>Hemos reservado habitaciones en el Hotel Ejemplo. Menciona "Boda" para una tarifa especial.</p>
-    </section>
-
-    <section id="registry" class="section">
-        <h2 id="registry">Lista de Regalos</h2>
-        <p>Tu presencia es el mejor regalo, pero si deseas obsequiarnos algo, visita nuestra <a href="#" target="_blank">lista de regalos</a>.</p>
-    </section>
-
-    <section id="rsvp" class="section">
-        <h2 id="rsvp">Confirmación de Asistencia</h2>
-        <p>Por favor confirma tu asistencia enviando un correo a <a href="mailto:bodanuestra@example.com">bodanuestra@example.com</a>.</p>
-    </section>
-
-    <section id="dresscode" class="section">
-        <h2 id="dresscode">Código de Vestimenta</h2>
-        <p>Formal. Colores claros recomendados.</p>
-    </section>
-
-    <section id="weather" class="section">
-        <h2 id="weather">Clima</h2>
-        <p>El clima suele ser templado en esta fecha. Verifica el pronóstico unos días antes.</p>
-    </section>
-
-    <section id="about" class="section">
-        <h2 id="about">Sobre Nosotros</h2>
-        <p>Nos conocimos hace varios años y estamos emocionados de compartir este día con ustedes.</p>
-    </section>
-
-    <section id="contact" class="section">
-        <h2 id="contact">Contacto</h2>
-        <p>Para cualquier duda, escríbenos a <a href="mailto:bodanuestra@example.com">bodanuestra@example.com</a>.</p>
-    </section>
-
-    <section id="map" class="section">
-        <h2 id="map">Ubicación</h2>
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509371!2d144.9537363153157!3d-37.8162792797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577dcb14fb49d4a!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="event-details">
+          <p class="event-label">La Boda de</p>
+          <h2 class="event-title" id="event-title">Juandi &amp; Dani</h2>
+          <p class="event-date" id="event-date">30 de Noviembre, 2025</p>
+          <p class="event-location" id="event-location">Santa Marta, Colombia</p>
         </div>
+      </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Nosotros -->
+    <section id="nosotros" class="section nosotros-section">
+      <div class="container section-header">
+        <h2 class="section-title" id="nosotros-title">Nosotros</h2>
+        <div class="section-line">
+          <span class="heart-icon" aria-hidden="true">♡</span>
+        </div>
+        <p class="section-subtitle" id="nosotros-subtitle">Nuestra Historia de Amor</p>
+      </div>
+      <div class="container nosotros-content">
+        <p id="nosotros-text">
+          Dos corazones, un viaje. Nos conocimos en 2019 y hemos sido inseparables desde entonces.
+          Después de años de aventuras, risas y crecimiento juntos, estamos listos para dar
+          el siguiente paso y celebrar nuestro amor con todos ustedes en la hermosa ciudad de Santa Marta.
+        </p>
+        <div class="nosotros-card">
+          <span class="heart-icon-lg" aria-hidden="true">♡</span>
+          <p class="nosotros-names" id="nosotros-names">Juandi &amp; Dani</p>
+          <p class="nosotros-date" id="nosotros-date">Juntos desde 2019</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detalles del Evento -->
+    <section id="detalles" class="section detalles-section">
+      <div class="container section-header">
+        <h2 class="section-title" id="detalles-title">Detalles del Evento</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="container detalles-content">
+        <div class="detalle-card">
+          <span class="icon clock-icon" aria-hidden="true">🕒</span>
+          <h3 id="ceremonia-title">Ceremonia</h3>
+          <p id="ceremonia-time">4:00 PM</p>
+          <p id="ceremonia-place">En la Playa</p>
+        </div>
+        <div class="detalle-card">
+          <span class="icon calendar-icon" aria-hidden="true">📅</span>
+          <h3 id="recepcion-title">Recepción</h3>
+          <p id="recepcion-time">6:00 PM</p>
+          <p id="recepcion-place">Casa Kapikua</p>
+        </div>
+      </div>
+      <div class="container lugar-card">
+        <span class="icon location-icon" aria-hidden="true">📍</span>
+        <h3 id="lugar-title">Casa Kapikua</h3>
+        <p id="lugar-location">Km 20 vía Santa Marta – Ciénaga, Santa Marta, Colombia</p>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.299324728572!2d-74.2211115249536!3d11.091054689077476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef457fd506e70fd%3A0xa7265f258237e643!2sCasa%20Kapikua!5e0!3m2!1ses!2sco!4v1749091212176!5m2!1ses!2sco"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Código de Vestimenta y Clima -->
+    <section class="section dress-weather-section">
+      <div class="container dress-weather-content">
+        <div class="dress-code-card">
+          <span class="icon dress-icon" aria-hidden="true">👗</span>
+          <h3 id="dresscode-title">Código de Vestimenta</h3>
+          <p id="dresscode-text">
+            Se reserva color blanco y azul.<br />
+            <strong>Damas:</strong> vestido largo de un solo tono sin estampados, calzado
+            con tacón grueso o sandalias planas (la ceremonia será en la playa).<br />
+            <strong>Hombres:</strong> guayabera o camisa de lino.
+          </p>
+        </div>
+        <div class="weather-card">
+          <span class="icon sun-icon" aria-hidden="true">☀️</span>
+          <h3 id="weather-title">Clima</h3>
+          <p id="weather-text">
+            Espera clima tropical cálido con temperaturas alrededor de 30 °C. Se recomiendan telas ligeras.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Viajes y Hospedaje -->
+    <section id="viajes" class="section viajes-section">
+      <div class="container section-header">
+        <h2 class="section-title" id="viajes-title">Viajes y Hospedaje</h2>
+        <p class="section-subtitle" id="viajes-subtitle">Planificando tu Visita</p>
+        <div class="section-line"></div>
+      </div>
+      <div class="container viajes-cards">
+        <div class="viaje-card">
+          <span class="icon plane-icon" aria-hidden="true">✈️</span>
+          <h3 id="aeropuerto-title">Aeropuerto Más Cercano</h3>
+          <p id="aeropuerto-text">Aeropuerto Internacional Simón Bolívar (SMR)</p>
+        </div>
+        <div class="viaje-card">
+          <span class="icon car-icon" aria-hidden="true">🚗</span>
+          <h3 id="transporte-title">Transporte</h3>
+          <p id="transporte-text">
+            Se organizará transporte desde el aeropuerto y local para huéspedes de fuera de la ciudad.
+          </p>
+        </div>
+        <div class="viaje-card">
+          <span class="icon location-icon" aria-hidden="true">📍</span>
+          <h3 id="santamarta-title">Santa Marta</h3>
+          <p id="santamarta-text">Perla de América, hermosa ciudad costera</p>
+        </div>
+      </div>
+      <div class="container hoteles-recomendados">
+        <h3 id="hoteles-title">Hoteles Recomendados</h3>
+        <div class="hoteles-cards">
+          <div class="hotel-card">
+            <h4 id="hotel1-name">Hotel Casa San Agustín</h4>
+            <p class="hotel-stars">⭐⭐⭐⭐⭐</p>
+            <p id="hotel1-desc">Luxury colonial hotel in the historic center</p>
+            <a href="#" class="hotel-link" target="_blank" rel="noopener noreferrer">
+              Reservar Ahora ↗
+            </a>
+          </div>
+          <div class="hotel-card">
+            <h4 id="hotel2-name">Hotel Boutique Don Pepe</h4>
+            <p class="hotel-stars">⭐⭐⭐⭐</p>
+            <p id="hotel2-desc">Boutique hotel with modern amenities</p>
+            <a href="#" class="hotel-link" target="_blank" rel="noopener noreferrer">
+              Reservar Ahora ↗
+            </a>
+          </div>
+          <div class="hotel-card">
+            <h4 id="hotel3-name">Casa Verde Hotel</h4>
+            <p class="hotel-stars">⭐⭐⭐⭐</p>
+            <p id="hotel3-desc">Eco-friendly hotel near the beach</p>
+            <a href="#" class="hotel-link" target="_blank" rel="noopener noreferrer">
+              Reservar Ahora ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lista de Regalos -->
+    <section id="regalos" class="section regalos-section">
+      <div class="container section-header">
+        <h2 class="section-title" id="regalos-title">Lista de Regalos</h2>
+        <div class="section-line">
+          <span class="gift-icon" aria-hidden="true">🎁</span>
+        </div>
+        <p class="section-subtitle" id="regalos-subtitle">Tu Presencia es Nuestro Regalo</p>
+      </div>
+      <div class="container regalos-cards">
+        <p id="regalos-text">
+          Tu presencia en nuestra boda es el regalo más grande de todos. Para aquellos que deseen
+          honrarnos con un regalo, hemos creado estas opciones:
+        </p>
+        <div class="regalo-card">
+          <span class="gift-icon-lg" aria-hidden="true">🎁</span>
+          <h3 id="lluvia-title">Lluvia de Sobres</h3>
+          <p id="lluvia-text">
+            Tu generosa contribución nos ayudará a comenzar nuestra nueva vida juntos.
+          </p>
+          <button class="btn-primary" id="lluvia-btn">Saber Más</button>
+        </div>
+        <div class="regalo-card">
+          <span class="heart-icon-lg" aria-hidden="true">♡</span>
+          <h3 id="fondo-title">Fondo de Luna de Miel</h3>
+          <p id="fondo-text">
+            Ayúdanos a crear recuerdos en nuestra aventura de luna de miel.
+          </p>
+          <button class="btn-primary" id="fondo-btn">Contribuir</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirmación -->
+    <section id="confirmacion" class="section confirmacion-section">
+      <div class="container section-header">
+        <h2 class="section-title" id="confirmacion-title">Confirmación</h2>
+        <div class="section-line">
+          <span class="mail-icon" aria-hidden="true">✉️</span>
+        </div>
+        <p class="section-subtitle" id="confirmacion-subtitle">
+          Por favor responde antes del 1 de Octubre, 2025
+        </p>
+      </div>
+      <form
+        class="confirmacion-form"
+        id="confirmacion-form"
+        aria-label="Formulario de confirmación de asistencia"
+      >
+        <fieldset class="radio-group">
+          <legend>¿Vas a asistir?</legend>
+          <label class="radio-label">
+            <input type="radio" name="asistencia" value="si" required />
+            ¡Sí, estaré ahí!
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="asistencia" value="no" />
+            Lo siento, no puedo asistir
+          </label>
+        </fieldset>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo *</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo Electrónico *</label>
+            <input type="email" id="correo" name="correo" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="invitados">Número de Invitados</label>
+            <select id="invitados" name="invitados">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dietas">Restricciones Dietéticas</label>
+            <input
+              type="text"
+              id="dietas"
+              name="dietas"
+              placeholder="Vegetarian, Vegan, Allergies, etc."
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje Especial (Opcional)</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary btn-submit">
+          Enviar Confirmación
+        </button>
+      </form>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contacto-section">
+      <div class="container section-header">
+        <h2 class="section-title" id="contacto-title">Contáctanos</h2>
+        <div class="section-line">
+          <span class="chat-icon" aria-hidden="true">💬</span>
+        </div>
+        <p class="section-subtitle" id="contacto-subtitle">¿Preguntas? Estamos Aquí para Ayudar</p>
+      </div>
+      <div class="container contacto-cards">
+        <div class="contact-card">
+          <div class="contact-initial">K</div>
+          <p class="contact-name">Karol Niño</p>
+          <p class="contact-role">Wedding Planner</p>
+          <p class="contact-phone">📞 +57 324 274 4052</p>
+          <p class="contact-email">✉️ gerencia@karolplanner.com</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-initial">D</div>
+          <p class="contact-name">Dani</p>
+          <p class="contact-role">Novia</p>
+          <p class="contact-phone">📞 +57 300 420 4503</p>
+          <p class="contact-email">✉️ dani@email.com</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-initial">J</div>
+          <p class="contact-name">Juandi</p>
+          <p class="contact-role">Novio</p>
+          <p class="contact-phone">📞 +57 318 690 7312</p>
+          <p class="contact-email">✉️ juandi@email.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-heart" aria-hidden="true">♥</p>
+    <p class="footer-text" id="footer-names">Juandi &amp; Dani</p>
+    <p class="footer-text" id="footer-date-location">
+      30 de Noviembre, 2025 &#183; Santa Marta, Colombia
+    </p>
+    <p class="footer-madeby">Hecho con ♥ para Juandi &amp; Dani</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
