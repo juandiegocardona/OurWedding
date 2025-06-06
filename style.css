@@ -100,61 +100,51 @@ body {
   font-size: 1.2rem;
 }
 
-/* Banner */
-
+/* ==============================
+   Banner & Event Section
+   ============================== */
 .banner-section {
   background: linear-gradient(180deg, #f7f9fc 0%, #e6efff 100%);
-  padding: 6rem 1rem 4rem;
-  text-align: center;
+  padding: 4rem 1rem;
 }
 
-.banner-card {
-  background: var(--color-bg-lighter);
-  box-shadow: 0 8px 24px var(--color-shadow);
-  border-radius: 12px;
-  display: inline-block;
-  padding: 2rem 3rem;
-}
-
-.banner-subtitle {
-  font-family: var(--font-sans);
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--color-primary-light);
-  letter-spacing: 2.5px;
-  margin: 0 0 0.25rem 0;
-}
-
-.banner-title {
-  font-family: var(--font-serif);
-  font-weight: 700;
-  font-size: 3rem;
-  margin: 0;
-  color: var(--color-primary);
-}
-
-/* Countdown Section */
-
-.countdown-section {
-  max-width: 1024px;
-  margin: 3rem auto 5rem;
-  padding: 0 1rem;
-}
-
-.countdown-container {
+.banner-container {
   display: flex;
-  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
+.banner-image {
+  flex: 1 1 50%;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px var(--color-shadow);
+}
+
+.banner-content {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Reutilizamos .event-details y .countdown-card para darle estilo a la columna de la derecha */
+
+/* Countdown Card (ahora dentro de banner-content) */
 .countdown-card {
   background: var(--color-bg-lighter);
   box-shadow: 0 8px 24px var(--color-shadow);
   border-radius: 12px;
   padding: 2rem 2.5rem;
-  flex: 1 1 280px;
+  width: 100%;
   text-align: center;
 }
 
@@ -177,11 +167,12 @@ body {
   color: var(--color-primary);
 }
 
+/* Event Details (dentro de banner-content) */
 .event-details {
-  flex: 1 1 280px;
   color: var(--color-primary);
   font-family: var(--font-serif);
   text-align: center;
+  width: 100%;
 }
 
 .event-label {
@@ -209,8 +200,11 @@ body {
   margin: 0;
 }
 
-/* Sections general */
+/* ==============================
+   Secciones generales sin cambios
+   ============================== */
 
+/* Sections general */
 .section {
   max-width: 1024px;
   margin: 4rem auto 5rem;
@@ -218,7 +212,6 @@ body {
 }
 
 /* Section Header */
-
 .section-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -254,7 +247,6 @@ body {
 }
 
 /* Nosotros */
-
 .nosotros-content {
   display: flex;
   justify-content: center;
@@ -300,7 +292,6 @@ body {
 }
 
 /* Detalles */
-
 .detalles-content {
   display: flex;
   justify-content: center;
@@ -340,7 +331,6 @@ body {
 }
 
 /* Lugar Card */
-
 .lugar-card {
   background: var(--color-bg-lighter);
   box-shadow: 0 8px 24px var(--color-shadow);
@@ -379,7 +369,6 @@ body {
 }
 
 /* Botón primario */
-
 .btn-primary {
   background-color: var(--color-primary-light);
   color: white;
@@ -399,7 +388,6 @@ body {
 }
 
 /* Dress Code & Weather */
-
 .dress-weather-content {
   display: flex;
   justify-content: center;
@@ -440,7 +428,6 @@ body {
 }
 
 /* Viajes */
-
 .viajes-section {
   background-color: #fef9f5;
   padding-top: 4rem;
@@ -488,7 +475,6 @@ body {
 }
 
 /* Hoteles Recomendados */
-
 .hoteles-recomendados {
   max-width: 1024px;
   margin: 0 auto;
@@ -543,7 +529,6 @@ body {
 }
 
 /* Regalos */
-
 .regalos-cards {
   max-width: 1024px;
   margin: 0 auto;
@@ -602,7 +587,6 @@ body {
 }
 
 /* Confirmación Form */
-
 .confirmacion-form {
   max-width: 650px;
   margin: 0 auto;
@@ -704,7 +688,6 @@ body {
 }
 
 /* Contacto */
-
 .contacto-cards {
   max-width: 1024px;
   margin: 2rem auto 0 auto;
@@ -761,7 +744,6 @@ body {
 }
 
 /* Footer */
-
 .footer {
   background-color: var(--color-primary);
   color: white;
@@ -789,15 +771,20 @@ body {
 }
 
 /* Responsive */
-
 @media (max-width: 900px) {
   .nav-menu {
     display: none;
   }
+
+  .banner-container {
+    flex-direction: column;
+  }
+
   .countdown-container {
     flex-direction: column;
     align-items: center;
   }
+
   .detalles-content,
   .dress-weather-content,
   .viajes-cards,
@@ -806,6 +793,7 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
   .form-row {
     flex-direction: column;
   }
