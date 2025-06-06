@@ -1,15 +1,36 @@
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #fcf9f3;
     color: #333;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
 }
 
 .hero {
     text-align: center;
-    padding: 4rem 1rem;
-    background: #f8f5f0;
+    padding: 6rem 1rem;
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1200&q=80')
+        center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .countdown {
@@ -20,7 +41,10 @@ body {
 .section {
     padding: 2rem 1rem;
     max-width: 800px;
-    margin: auto;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .section h2 {
@@ -38,6 +62,17 @@ body {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ef6c80;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+#lang-toggle:hover {
+    background-color: #d45a6d;
 }
 
 @media (min-width: 768px) {
