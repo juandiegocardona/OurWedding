@@ -40,8 +40,8 @@ const translations = {
     // Código de vestimenta y clima
     'dresscode-title': 'Dress Code',
     'dresscode-text1': 'Se reserva color blanco y azul.',
-    'dresscode-text2': 'Damas: Vestido largo de un solo tono sin estampados, calzado con tacón grueso o sandalias planas (la ceremonia será en la playa).',
-    'dresscode-text3': 'Caballeros: Guayabera o camisa de lino.',
+    'dresscode-text2': '<strong>Damas:</strong> Vestido largo de un solo tono sin estampados, calzado con tacón grueso o sandalias planas (la ceremonia será en la playa).',
+    'dresscode-text3': '<strong>Caballeros:</strong> Guayabera o camisa de lino.',
     'weather-title': 'Clima',
     'weather-text': 'Espera clima tropical cálido con temperaturas alrededor de 30 °C. Se recomiendan telas ligeras.',
 
@@ -144,8 +144,8 @@ const translations = {
     // Código de vestimenta y clima
     'dresscode-title': 'Dress Code',
     'dresscode-text1': 'White and blue colors reserved.',
-    'dresscode-text2': 'Ladies: Long solid-colored dress (no prints), chunky heels or flat sandals (ceremony on the beach).',
-    'dresscode-text3': 'Gentlemen: Guayabera or linen shirt.',
+    'dresscode-text2': '<strong>Ladies:</strong> Long solid-colored dress (no prints), chunky heels or flat sandals (ceremony on the beach).',
+    'dresscode-text3': '<strong>Gentlemen:</strong>Guayabera or linen shirt.',
     'weather-title': 'Weather',
     'weather-text': 'Expect warm tropical weather around 30 °C. Lightweight fabrics are recommended.',
 
@@ -289,6 +289,33 @@ window.addEventListener('DOMContentLoaded', () => {
 document.getElementById('menu-toggle').addEventListener('click', () => {
   const navMenu = document.getElementById('nav-menu');
   navMenu.classList.toggle('active');
+});
+
+document.getElementById('confirmacion-form').addEventListener('submit', function (e) {
+  e.preventDefault(); // Prevenir recarga
+
+  const form = e.target;
+  const data = new FormData(form);
+  const jsonData = Object.fromEntries(data.entries());
+
+  fetch('https://hook.us2.make.com/5llwg8hrao1v641fmv8a9n2va9mgxvqm', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(jsonData)
+  })
+    .then(response => {
+      if (response.ok) {
+        alert('¡Gracias por confirmar tu asistencia!'); // o muestra algo más elegante
+        form.reset(); // opcional: limpia el formulario
+      } else {
+        alert('Hubo un error al enviar tu confirmación. Intenta nuevamente.');
+      }
+    })
+    .catch(() => {
+      alert('Error de red. Intenta más tarde.');
+    });
 });
 
 
