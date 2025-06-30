@@ -816,7 +816,93 @@ div.scroll-container img {
   box-shadow: 0 6px 16px var(--color-shadow);
   display: inline-block;
 }
+/* Compensar el sticky navbar al hacer scroll a una sección */
+.section {
+  scroll-margin-top: 100px; /* Ajusta este valor según el alto de tu navbar */
+}
+/* Preboda Layout */
+.preboda-layout {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: stretch; /* Esto es clave para igualar altura */
+  justify-content: center;
+}
 
+
+.preboda-text,
+.preboda-map {
+  flex: 1 1 400px;
+  min-height: 380px;
+  background: var(--color-bg-lighter);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px var(--color-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preboda-text strong {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+
+
+/* Igualar altura entre las tarjetas de regalo */
+.regalos-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* clave para igualar altura */
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.regalo-card {
+  background: var(--color-accent-light);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px var(--color-shadow);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 320px;
+  min-height: 320px;
+  text-align: center;
+  position: relative;
+}
+
+.regalo-card h3 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin: 0 0 1rem 0;
+}
+
+.regalo-card p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.regalo-card .btn-primary {
+  margin-top: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .preboda-layout {
+    flex-direction: column;
+  }
+}
 /* Responsive */
 @media (max-width: 900px) {
   .nav-menu {

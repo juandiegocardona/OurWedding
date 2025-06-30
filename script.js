@@ -24,7 +24,7 @@ const translations = {
 
     // Pre-boda
     'preboda-title': 'Pre-boda',
-    'preboda-text': 'Sabemos que muchos están viajando desde lejos para acompañarnos y eso significa el mundo para nosotros. Si llegas desde el sábado, nos encantaría compartir un evento de bienvenida. Una oportunidad para reencontrarnos y empezar a celebrar juntos\nFecha: Sábado 29 Noviembre del 2025\nLugar: Por Definir\nHora: 5:00 PM',
+    'preboda-text': 'Sabemos que muchos están viajando desde lejos para acompañarnos y eso significa el mundo para nosotros. Si llegas desde el sábado, nos encantaría compartir un evento de bienvenida. Una oportunidad para reencontrarnos y empezar a celebrar juntos.<br><strong>Fecha:</strong> Sábado 29 Noviembre del 2025<br><strong>Lugar:</strong> Por Definir<br><strong>Hora:</strong> 5:00 PM',
 
     // Detalles boda
     'detalles-title': 'Nuestra Boda',
@@ -128,7 +128,7 @@ const translations = {
 
     // Pre-boda
     'preboda-title': 'Pre-Wedding',
-    'preboda-text': 'We know many of you are traveling from afar, and that means the world to us. If you arrive on Saturday, we’d love to share a welcome gathering — a chance to reconnect and start the celebration together.\nDate: Saturday, November 29, 2025\nPlace: To be confirmed\nTime: 5:00 PM',
+    'preboda-text': 'We know many of you are traveling from afar, and that means the world to us. If you arrive on Saturday, we’d love to share a welcome gathering — a chance to reconnect and start the celebration together.<br><strong>Date:</strong> Saturday, November 29, 2025<br><strong>Place:</strong> To be confirmed<br><strong>Time:</strong> 5:00 PM',
 
     // Detalles boda
     'detalles-title': 'Our Wedding',
@@ -244,7 +244,7 @@ function switchLanguage() {
   for (const id in translations[currentLang]) {
     const el = document.getElementById(id);
     if (el) {
-      el.textContent = translations[currentLang][id];
+      el.innerHTML = translations[currentLang][id];
     }
   }
 
@@ -262,7 +262,7 @@ window.addEventListener('DOMContentLoaded', () => {
   for (const id in translations[currentLang]) {
     const el = document.getElementById(id);
     if (el) {
-      el.textContent = translations[currentLang][id];
+      el.innerHTML = translations[currentLang][id];
     }
   }
   toggleBtn.textContent = '🌐 ES';
