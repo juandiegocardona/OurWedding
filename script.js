@@ -24,7 +24,7 @@ const translations = {
 
     // Pre-boda
     'preboda-title': 'Pre-boda',
-    'preboda-text': 'Sabemos que muchos están viajando desde lejos para acompañarnos y eso significa el mundo para nosotros. Si llegas desde el sábado, nos encantaría compartir un evento de bienvenida. Una oportunidad para reencontrarnos y empezar a celebrar juntos.<br><strong>Fecha:</strong> Sábado 29 Noviembre del 2025<br><strong>Lugar:</strong> Por Definir<br><strong>Hora:</strong> 5:00 PM',
+    'preboda-text': 'Sabemos que muchos están viajando desde lejos para acompañarnos y eso significa el mundo para nosotros. Si llegas desde el sábado, nos encantaría compartir un evento de bienvenida. Una oportunidad para reencontrarnos y empezar a celebrar juntos.<br><br><strong>Fecha:</strong> Sábado 29 Noviembre del 2025<br><strong>Lugar:</strong> Por Definir<br><strong>Hora:</strong> 5:00 PM',
 
     // Detalles boda
     'place-title':'Lugar',
@@ -37,7 +37,7 @@ const translations = {
     'recepcion-title': 'Recepción',
     'recepcion-time': '6:00 PM',
     'recepcion-place': 'Casa Kapikua',
-    'lugar-title': 'Lugar: Casa Kapikua',
+    'lugar-title': 'Casa Kapikua',
     'lugar-location': 'Km 20 vía Santa Marta – Ciénaga, Santa Marta, Colombia',
 
     // Código de vestimenta y clima
@@ -131,7 +131,7 @@ const translations = {
 
     // Pre-boda
     'preboda-title': 'Pre-Wedding',
-    'preboda-text': 'We know many of you are traveling from afar, and that means the world to us. If you arrive on Saturday, we’d love to share a welcome gathering — a chance to reconnect and start the celebration together.<br><strong>Date:</strong> Saturday, November 29, 2025<br><strong>Place:</strong> To be confirmed<br><strong>Time:</strong> 5:00 PM',
+    'preboda-text': 'We know many of you are traveling from afar, and that means the world to us. If you arrive on Saturday, we’d love to share a welcome gathering — a chance to reconnect and start the celebration together.<br><br><strong>Date:</strong> Saturday, November 29, 2025<br><strong>Place:</strong> To be confirmed<br><strong>Time:</strong> 5:00 PM',
 
     // Detalles boda
     'detalles-title': 'Our Wedding',
@@ -144,7 +144,7 @@ const translations = {
     'recepcion-title': 'Reception',
     'recepcion-time': '6:00 PM',
     'recepcion-place': 'Casa Kapikua',
-    'lugar-title': 'Location: Casa Kapikua',
+    'lugar-title': 'Casa Kapikua',
     'lugar-location': 'Km 20 via Santa Marta – Ciénaga, Santa Marta, Colombia',
 
     // Código de vestimenta y clima
