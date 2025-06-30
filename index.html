@@ -18,7 +18,7 @@
   <header class="navbar">
     <div class="container navbar-content">
       <div class="logo">J &amp; D</div>
-      <nav class="nav-menu" aria-label="Main navigation">
+      <nav class="nav-menu" id="nav-menu"  aria-label="Main navigation">
       <a href="#banner" class="nav-link" id="nav-inicio">Inicio</a>
       <a href="#nosotros" class="nav-link" id="nav-nosotros">Nosotros</a>
       <a href="#preboda" class="nav-link" id="nav-preboda">Pre-boda</a>
@@ -29,6 +29,10 @@
       <button id="lang-toggle" aria-label="Cambiar idioma" class="lang-toggle">
         <span class="globe-icon" aria-hidden="true">🌐</span> ES
       </button>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+  ☰
+</button>
+
     </div>
   </header>
 
@@ -48,7 +52,7 @@
   </section>
     
     <!-- Nosotros -->
-    <section id="nosotros" class="section nosotros-section">
+    <section id="nosotros" class="section nosotros-section fade-in slide-up">
       <div class="container section-header">
         <h2 class="section-title" id="nosotros-title">¡Sí, nos casamos!</h2>
         <div class="section-line"></div>
@@ -69,13 +73,13 @@
  <img src="images/ring.jpeg" alt="Banner">
 </div>
      <!-- Preboda -->
-    <section id="preboda" class="section nosotros-section">
+    <section id="preboda" class="section nosotros-section fade-in slide-up">
   <div class="container section-header">
     <h2 class="section-title" id="preboda-title">Pre-boda</h2>
     <div class="section-line"></div>
   </div>
   <div class="container preboda-layout">
-    <div class="preboda-text">
+    <div class="preboda-text card-hover">
       <p id="preboda-text">
         Sabemos que muchos están viajando desde lejos para acompañarnos y eso significa el mundo para nosotros.
         Si llegas desde el sábado, nos encantaría compartir un evento de bienvenida.
@@ -86,8 +90,9 @@
       </p>
     </div>
     <div class="preboda-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125228.9924523614!2d-74.2647988860801!3d11.231513879789313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef4f66ff59a173d%3A0x124b95fc153af9b8!2sSanta%20Marta%2C%20Magdalena!5e0!3m2!1ses!2sco!4v1751296141134!5m2!1ses!2sco"
+      <div class="map-fill"></div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125228.9924523614!2d-74.2647988860801!3d11.231513879789313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef4f66ff59a173d%3A0x124b95fc153af9b8!2sSanta%20Marta%2C%20Magdalena!5e0!3m2!1ses!2sco!4v1751296141134!5m2!1ses!2sco"
         width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
     </div>
   </div>
 </section>
@@ -95,7 +100,7 @@
 
     <!-- Nuestra Boda -->
      
-    <section id="boda" class="section detalles-section">
+    <section id="boda" class="section detalles-section fade-in slide-up">
       <div class="container section-header">
         <h2 class="section-title" id="detalles-title">Nuestra Boda</h2>
         <div class="section-line"></div>
@@ -104,7 +109,7 @@
     <!-- Código de Vestimenta y Clima -->
     <section class="section dress-weather-section">
       <div class="container dress-weather-content">
-        <div class="dress-code-card">
+        <div class="dress-code-card card-hover">
           <h3 id="ceremonia-title">Ceremonia</h3>
           <p id="ceremonia-time">4:00 PM</p>
           <p id="ceremonia-place">En la Playa</p>
@@ -112,7 +117,7 @@
           <p id="recepcion-time">6:00 PM</p>
           <p id="recepcion-place">Casa Kapikua</p>
         </div>
-        <div class="dress-code-card">
+        <div class="dress-code-card card-hover">
           <h3 id="dresscode-title">Dress Code</h3>
           <p id="dresscode-text1">
             Se reserva color blanco y azul.<br />
@@ -125,19 +130,19 @@
             <strong>Caballeros:</strong> Guayabera o camisa de lino.
           </p>
         </div>
-        <div class="weather-card">
+        <div class="weather-card card-hover">
           <h3 id="weather-title">Clima</h3>
           <p id="weather-text">
             Espera clima tropical cálido con temperaturas alrededor de 30 °C. Se recomiendan telas ligeras.
           </p>
         </div>
-        <div class="weather-card">
+        <div class="map-wrapper">
         <h3 id="lugar-title">Lugar: Casa Kapikua</h3>
         <p id="lugar-location">Km 20 vía Santa Marta – Ciénaga, Santa Marta, Colombia</p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.299324728572!2d-74.2211115249536!3d11.091054689077476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef457fd506e70fd%3A0xa7265f258237e643!2sCasa%20Kapikua!5e0!3m2!1ses!2sco!4v1749091212176!5m2!1ses!2sco"
-              width="900"
-              height="450"
+            width="900"
+            height="450"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
@@ -150,7 +155,7 @@
       
          </section>
          <!-- Lista de Regalos -->
-    <section id="datosinteres" class="section regalos-section">
+    <section id="datosinteres" class="section regalos-section fade-in slide-up">
       <div class="container section-header">
         <h2 class="section-title" id="regalos-title">Lista de Regalos</h2>
         <div class="section-line">
@@ -163,13 +168,13 @@
           Tu presencia en nuestra boda es el regalo más grande de todos. Para aquellos que deseen
           honrarnos con un regalo, hemos creado estas opciones:
         </p>
-        <div class="regalo-card">
+        <div class="regalo-card card-hover">
           <h3 id="lluvia-title">Lluvia de Sobres </h3>
           <p id="lluvia-text">
             El día de la boda tendremos un espacio especial para recibir tu sobre con todo nuestro cariño.
           </p>
         </div>
-        <div class="regalo-card">
+        <div class="regalo-card card-hover">
           <h3 id="fondo-title">Transferencia Digital</h3>
           <p id="fondo-text">
             También puedes hacernos un aporte desde donde estés a través de este link de pago.
@@ -187,19 +192,19 @@
         <div class="section-line"></div>
       </div>
       <div class="container viajes-cards">
-        <div class="viaje-card">
+        <div class="viaje-card card-hover">
           
           <h3 id="aeropuerto-title">Aeropuerto Más Cercano</h3>
           <p id="aeropuerto-text">Aeropuerto Internacional Simón Bolívar (SMR)</p>
         </div>
-        <div class="viaje-card">
+        <div class="viaje-card card-hover">
           
           <h3 id="transporte-title">Transporte</h3>
           <p id="transporte-text">
             Se recomienda hacer uso de medios de transporte como Uber, taxi o transporte privado
           </p>
         </div>
-        <div class="viaje-card">
+        <div class="viaje-card card-hover">
           
           <h3 id="santamarta-title">Santa Marta</h3>
           <p id="santamarta-text">Perla de América, hermosa ciudad costera</p>
@@ -208,14 +213,14 @@
       <div class="container hoteles-recomendados">
         <h3 id="hoteles-title">Hoteles Recomendados</h3>
         <div class="hoteles-cards">
-          <div class="hotel-card">
+          <div class="hotel-card card-hover">
             <h4 id="hotel1-name">Airbnb</h4>
             <p id="hotel1-desc">Reserva tu estancia y disfruta de una experiencia memorable.</p>
             <a href="https://www.airbnb.com.co/a/stays/Santa-Marta--Magdalena--Colombia?c=.pi0.pk289665010_71962438797&localized_ghost=true&gad_source=1&gad_campaignid=289665010&gbraid=0AAAAADz55LlM0rm-J34t5S7L7ozTZXsZ7&gclid=Cj0KCQjw64jDBhDXARIsABkk8J6JEICo1sdPI_b2ktVbhkb1FVcUqKNOE_xAvrQ5lpREbFV6UxhWRA4aAqUZEALw_wcB" class="hotel-link" target="_blank" rel="noopener noreferrer">
               Reservar Ahora ↗
             </a>
           </div>
-          <div class="hotel-card">
+          <div class="hotel-card card-hover">
             <h4 id="hotel2-name">GHL</h4>
          
             <p id="hotel2-desc">El Hotel GHL Relax Costa Azul está ubicado a unos 3km de Kapikua.</p>
@@ -223,7 +228,7 @@
               Reservar Ahora ↗
             </a>
           </div>
-          <div class="hotel-card">
+          <div class="hotel-card card-hover">
             <h4 id="hotel3-name">Wyndham</h4>
             
             <p id="hotel3-desc">Está ubicado unos 5 km de Kapikua.</p>
@@ -233,21 +238,21 @@
           </div>
         </div>
         <div class="hoteles-cards">
-          <div class="hotel-card">
+          <div class="hotel-card card-hover">
             <h4 id="hotel4-name">Zuana</h4>
             <p id="hotel4-desc">Está ubicado a unos 6km de Kapikua.</p>
             <a href="https://www.booking.com/searchresults.es.html?aid=311839&label=zuana-beach-resort-2%2AKMJvVFBSE50gYaWXXNQQS175885249854%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-20261473455%3Alp9198070%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YavywThF4buZaN3e9Rle2iM&gclid=Cj0KCQjw64jDBhDXARIsABkk8J58W-80N954MLUo5qMGYzqwW_BVI-PeDxEiDvR9RBOXMBUQrCJYsxIaAmlzEALw_wcB&highlighted_hotels=586098&redirected=1&city=-598739&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=f9d113174c67d4abe55fbdeedbf6d5e0" class="hotel-link" target="_blank" rel="noopener noreferrer">
               Reservar Ahora ↗
             </a>
           </div>
-          <div class="hotel-card">
+          <div class="hotel-card card-hover">
             <h4 id="hotel5-name">Decameron</h4>
             <p id="hotel5-desc">Está ubicado a 1km de Kapikua.</p>
             <a href="https://www.booking.com/searchresults.es.html?aid=311839&label=decameron-galeon-92c3zVtVF_kXuIuqTXfgWwS266376957499%3Apl%3Ata%3Ap1%3Ap21.093.000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-801691431%3Alp9198070%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YavywThF4buZaN3e9Rle2iM&gclid=Cj0KCQjw64jDBhDXARIsABkk8J6bBoVT4oJa-M4cVJ8XG1qbgB33cYst2le6Mo7fj10uc3jrs9SmaS4aAmonEALw_wcB&highlighted_hotels=346848&redirected=1&city=-598739&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=f9d113174c67d4abe55fbdeedbf6d5e0" class="hotel-link" target="_blank" rel="noopener noreferrer">
               Reservar Ahora ↗
             </a>
           </div>
-          <div class="hotel-card">
+          <div class="hotel-card card-hover">
             <h4 id="hotel6-name">Hilton</h4>            
             <p id="hotel6-desc">Está ubicado a unos 6km de Kapikua.</p>
             <a href="https://www.booking.com/searchresults.es.html?aid=311839&label=hilton-santa-marta-gUzwugJ_6HHM9NJDGXEkxgS732608220431%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-329622631844%3Alp9198070%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YavywThF4buZaN3e9Rle2iM&gclid=Cj0KCQjw64jDBhDXARIsABkk8J4Vmga2qv9_b_kYsPqOyXbs2fKE0-W7X339S1HKVx_MUu5DmZEfhKkaAjosEALw_wcB&highlighted_hotels=9175172&redirected=1&city=-598739&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=f9d113174c67d4abe55fbdeedbf6d5e0" class="hotel-link" target="_blank" rel="noopener noreferrer">
@@ -259,7 +264,7 @@
         <div class="container hoteles-recomendados">
         <h3 id="restaurantes-recomendados">Restaurantes Rcomendados</h3>
         <div class="hoteles-cards">
-          <div class="hotel-card">
+          <div class="hotel-card card-hover">
             <h3 id="restaurantes-centro">Centro Histórico</h3>
             <h4 id="hotel1-name"><a href="https://www.instagram.com/serenabistro?igsh=MWJsOGtzajRlYWV6Zw%3D%3D" class="hotel-link" target="_blank" rel="noopener noreferrer">Serena</a></h4>
             <h4 id="hotel1-name"><a href="https://www.instagram.com/casamagdalena_smr?igsh=cjNxOXJtaHBtN2l3" class="hotel-link" target="_blank" rel="noopener noreferrer">Casa Magadalena</a></h4>
@@ -268,7 +273,7 @@
             <h4 id="hotel1-name"><a href="https://www.instagram.com/aguaderio_smr?igsh=MTB5aGgwc2JlNWpyZA%3D%3D" class="hotel-link" target="_blank" rel="noopener noreferrer">Agua del Rio</a></h4>
             <h4 id="hotel1-name"><a href="https://www.instagram.com/shio.asiankitchen?igsh=MWFkYWNrY3U2Ync5Zg%3D%3D" class="hotel-link" target="_blank" rel="noopener noreferrer">Shio</a></h4>
           </div>
-           <div class="hotel-card">
+           <div class="hotel-card card-hover">
             <h3 id="restaurantes-pozos">Pozos Colorados</h3>
           <h4 id="hotel1-name"><a href="https://www.instagram.com/sikunu_rooftop?igsh=MWhhMHMxcjN1bG11cw%3D%3D" class="hotel-link" target="_blank" rel="noopener noreferrer">Sikunu Rooftop</a></h4>
             <h4 id="hotel1-name"><a href="https://www.instagram.com/crepesywaffles?igsh=dDBkbjd0NWh5M3N3" class="hotel-link" target="_blank" rel="noopener noreferrer">Crepes & Waffles</a></h4>
@@ -279,8 +284,8 @@
     </section>
 
     <!-- Confirmación -->
-    <section id="confirmacion" class="section confirmacion-section">
-      <div class="container section-header">
+    <section id="confirmacion" class="section confirmacion-section fade-in slide-up">
+      <div class="container section-header card-hover">
         <h2 class="section-title" id="confirmacion-title">Confirmación</h2>
         <div class="section-line">
           
@@ -344,7 +349,7 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="section contacto-section">
+    <section id="contacto" class="section contacto-section fade-in slide-up">
       <div class="container section-header">
         <h2 class="section-title" id="contacto-title">¿Preguntas?</h2>
         <div class="section-line">
@@ -353,21 +358,21 @@
        
       </div>
       <div class="container contacto-cards">
-        <div class="contact-card">
+        <div class="contact-card card-hover">
           <div class="contact-initial">K</div>
           <p class="contact-name">Karol Niño</p>
           <p class="contact-role">Wedding Planner</p>
           <p class="contact-phone">+57 324 274 4052</p>
           <p class="contact-email">gerencia@karolplanner.com</p>
         </div>
-        <div class="contact-card">
+        <div class="contact-card card-hover">
           <div class="contact-initial">D</div>
           <p class="contact-name">Dani</p>
           <p class="contact-role">Novia</p>
           <p class="contact-phone">+57 300 420 4503</p>
           
         </div>
-        <div class="contact-card">
+        <div class="contact-card card-hover">
           <div class="contact-initial">J</div>
           <p class="contact-name">Juandi</p>
           <p class="contact-role">Novio</p>

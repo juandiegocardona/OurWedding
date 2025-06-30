@@ -267,3 +267,28 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   toggleBtn.textContent = '🌐 ES';
 });
+// Animación al hacer scroll: revelar secciones con fade-in/slide-up
+window.addEventListener('DOMContentLoaded', () => {
+  // Crear un observador de intersección
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Añadir clase 'visible' cuando la sección entra en pantalla
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);  // Dejar de observar esta sección (animación una sola vez)
+      }
+    });
+  });
+  
+  // Obtener todas las secciones con la clase 'fade-in' y observarlas
+  document.querySelectorAll('.fade-in').forEach(section => {
+    observer.observe(section);
+  });
+});
+// Menú hamburguesa para móvil
+document.getElementById('menu-toggle').addEventListener('click', () => {
+  const navMenu = document.getElementById('nav-menu');
+  navMenu.classList.toggle('active');
+});
+
+
