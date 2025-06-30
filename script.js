@@ -27,6 +27,9 @@ const translations = {
     'preboda-text': 'Sabemos que muchos están viajando desde lejos para acompañarnos y eso significa el mundo para nosotros. Si llegas desde el sábado, nos encantaría compartir un evento de bienvenida. Una oportunidad para reencontrarnos y empezar a celebrar juntos.<br><strong>Fecha:</strong> Sábado 29 Noviembre del 2025<br><strong>Lugar:</strong> Por Definir<br><strong>Hora:</strong> 5:00 PM',
 
     // Detalles boda
+    'place-title':'Lugar',
+    'place-time':'Casa Kapikua',
+    'place-description':'Km 20 vía Santa Marta – Ciénaga, Santa Marta, Colombia',
     'detalles-title': 'Nuestra Boda',
     'ceremonia-title': 'Ceremonia',
     'ceremonia-time': '4:00 PM',
@@ -82,7 +85,7 @@ const translations = {
     'lluvia-text': 'El día de la boda tendremos un espacio especial para recibir tu sobre con todo nuestro cariño.',
     'fondo-title': 'Transferencia Digital',
     'fondo-text': 'También puedes hacernos un aporte desde donde estés a través de este link de pago.',
-    'fondo-btn': 'Regalo',
+    'fondo-btn': 'Regalo Paypal',
 
     // Confirmación
     'confirmacion-title': 'Confirmación',
@@ -132,6 +135,9 @@ const translations = {
 
     // Detalles boda
     'detalles-title': 'Our Wedding',
+    'place-title':'Location',
+    'place-time':'Casa Kapikua',
+    'place-description':'Km 20 vía Santa Marta – Ciénaga, Santa Marta, Colombia',
     'ceremonia-title': 'Ceremony',
     'ceremonia-time': '4:00 PM',
     'ceremonia-place': 'On the Beach',
@@ -186,7 +192,7 @@ const translations = {
     'lluvia-text': 'We’ll have a special space at the wedding to receive your envelope with love.',
     'fondo-title': 'Digital Contribution',
     'fondo-text': 'You can also make a contribution from anywhere through this payment link.',
-    'fondo-btn': 'Gift',
+    'fondo-btn': 'Paypal Gift',
 
     // Confirmación
     'confirmacion-title': 'RSVP',
