@@ -261,6 +261,13 @@ toggleBtn.addEventListener('click', switchLanguage);
 
 // Iniciar bucle del contador
 setInterval(updateCountdown, 1000);
+// Mostrar #datosinteres solo si se navega por el hash
+window.addEventListener('hashchange', () => {
+  if (location.hash === '#datosinteres') {
+    document.getElementById('datosinteres')?.classList.remove('hidden');
+  }
+});
+
 updateCountdown();
 
 // Inicializar texto en español al cargar la página
@@ -272,6 +279,10 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
   toggleBtn.textContent = '🌐 ES';
+  const datos = document.getElementById('datosinteres');
+  if (datos && location.hash !== '#datosinteres') {
+    datos.classList.add('hidden');
+  }
 });
 // Animación al hacer scroll: revelar secciones con fade-in/slide-up
 window.addEventListener('DOMContentLoaded', () => {

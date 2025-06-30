@@ -989,7 +989,9 @@ div.scroll-container img {
   transform: translateY(0) scale(0.99);
   box-shadow: 0 6px 16px var(--color-shadow);
 }
-
+#datosinteres.hidden {
+  display: none;
+}
 
 
 @media (max-width: 768px) {
