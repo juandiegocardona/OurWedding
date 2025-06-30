@@ -19,12 +19,12 @@
     <div class="container navbar-content">
       <div class="logo">J &amp; D</div>
       <nav class="nav-menu" aria-label="Main navigation">
-        <a href="#banner" class="nav-link">Inicio</a>
-        <a href="#nosotros" class="nav-link">Nosotros</a>
-        <a href="#preboda" class="nav-link">Pre-boda</a>
-        <a href="#boda" class="nav-link">Nuestra Boda</a>
-        <a href="#datosinteres" class="nav-link">Datos de Interés</a>
-        <a href="#confirmacion" class="nav-link">RSVP</a>
+      <a href="#banner" class="nav-link" id="nav-inicio">Inicio</a>
+      <a href="#nosotros" class="nav-link" id="nav-nosotros">Nosotros</a>
+      <a href="#preboda" class="nav-link" id="nav-preboda">Pre-boda</a>
+      <a href="#boda" class="nav-link" id="nav-boda">Nuestra Boda</a>
+      <a href="#datosinteres" class="nav-link" id="nav-datos">Datos de Interés</a>
+      <a href="#confirmacion" class="nav-link" id="nav-rsvp">RSVP</a>
       </nav>
       <button id="lang-toggle" aria-label="Cambiar idioma" class="lang-toggle">
         <span class="globe-icon" aria-hidden="true">🌐</span> ES
@@ -71,13 +71,13 @@
      <!-- Preboda -->
     <section id="preboda" class="section nosotros-section">
       <div class="container section-header">
-        <h2 class="section-title" id="nosotros-title">Pre-boda</h2>
+        <h2 class="section-title" id="preboda-title">Pre-boda</h2>
         <div class="section-line"></div>
       </div>
        <section class="section dress-weather-section">
       <div class="container nosotros-content">
         <div class="dress-code-card">
-          <p id="nosotros-text">
+          <p id="preboda-text">
           Sabemos que muchos están viajando desde lejos para acompañarnos y eso significa el mundo para nosotros. Si llegas desde el sábado, nos encantaría compartir un evento de bienvenida. Una oportunidad para reencontrarnos y empezar a celebrar juntos
           <br>
           Fecha: Sábado 29 Novimbre del 2025
@@ -257,10 +257,10 @@
         </div>
     
         <div class="container hoteles-recomendados">
-        <h3 id="hoteles-title">Restaruantes Recomendados</h3>
+        <h3 id="restaurantes-recomendados">Restaurantes Rcomendados</h3>
         <div class="hoteles-cards">
           <div class="hotel-card">
-            <h3 id="hoteles-title">Centro Histórico</h3>
+            <h3 id="restaurantes-centro">Centro Histórico</h3>
             <h4 id="hotel1-name"><a href="https://www.instagram.com/serenabistro?igsh=MWJsOGtzajRlYWV6Zw%3D%3D" class="hotel-link" target="_blank" rel="noopener noreferrer">Serena</a></h4>
             <h4 id="hotel1-name"><a href="https://www.instagram.com/casamagdalena_smr?igsh=cjNxOXJtaHBtN2l3" class="hotel-link" target="_blank" rel="noopener noreferrer">Casa Magadalena</a></h4>
             <h4 id="hotel1-name"><a href="https://www.instagram.com/belo.smr?igsh=MWppZ3g5MzVtaGF4Yg%3D%3D" class="hotel-link" arget="_blank" rel="noopener noreferrer">Belo</a></h4>
@@ -269,7 +269,7 @@
             <h4 id="hotel1-name"><a href="https://www.instagram.com/shio.asiankitchen?igsh=MWFkYWNrY3U2Ync5Zg%3D%3D" class="hotel-link" target="_blank" rel="noopener noreferrer">Shio</a></h4>
           </div>
            <div class="hotel-card">
-            <h3 id="hoteles-title">Pozos Colorados</h3>
+            <h3 id="restaurantes-pozos">Pozos Colorados</h3>
           <h4 id="hotel1-name"><a href="https://www.instagram.com/sikunu_rooftop?igsh=MWhhMHMxcjN1bG11cw%3D%3D" class="hotel-link" target="_blank" rel="noopener noreferrer">Sikunu Rooftop</a></h4>
             <h4 id="hotel1-name"><a href="https://www.instagram.com/crepesywaffles?igsh=dDBkbjd0NWh5M3N3" class="hotel-link" target="_blank" rel="noopener noreferrer">Crepes & Waffles</a></h4>
             <h4 id="hotel1-name"><a href="https://www.instagram.com/cintocaribe?igsh=MW0yc2Ezd2swdm94cQ%3D%3D" class="hotel-link" target="_blank" rel="noopener noreferrer">Cinto</a></h4>
@@ -295,25 +295,25 @@
         aria-label="Formulario de confirmación de asistencia"
       >
         <fieldset class="radio-group">
-          <legend>¿Vas a asistir?</legend>
+          <legend id="form-label-asistencia">¿Vas a asistir?</legend>
           <label class="radio-label">
-            <input type="radio" name="asistencia" value="si" required />
-            ¡Sí, estaré ahí!
-          </label>
-          <label class="radio-label">
-            <input type="radio" name="asistencia" value="no" />
-            Lo siento, no puedo asistir
-          </label>
+  <input type="radio" name="asistencia" value="si" required />
+  <span id="form-si">¡Sí, estaré ahí!</span>
+</label>
+<label class="radio-label">
+  <input type="radio" name="asistencia" value="no" />
+  <span id="form-no">Lo siento, no puedo asistir</span>
+</label>
         </fieldset>
 
         <div class="form-row">
           <div class="form-group">
-            <label for="nombre">Nombre Completo *</label>
+            <label for="nombre" id="form-nombre">Nombre Completo *</label>
             <input type="text" id="nombre" name="nombre" required />
           </div>
           <div class="form-row"></div>
           <div class="form-group">
-            <label for="correo">Correo Electrónico *</label>
+            <label for="correo" id="form-correo">Correo Electrónico *</label>
             <input type="email" id="correo" name="correo" required />
           </div>
         </div>
@@ -321,24 +321,25 @@
         <div class="form-row">
   
           <div class="form-group">
-            <label for="dietas">Restricciones Dietéticas</label>
-            <input
-              type="text"
-              id="dietas"
-              name="dietas"
-              placeholder="Vegetarian, Vegan, Allergies, etc."
-            />
+            <label for="dietas" id="form-dietas">Restricciones Dietéticas</label>
+<input
+  type="text"
+  id="dietas"
+  name="dietas"
+  placeholder="Vegetariano, Vegano, Alergias, etc."
+/>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="mensaje">Mensaje Especial (Opcional)</label>
+          <label for="mensaje" id="form-mensaje">Mensaje Especial (Opcional)</label>
           <textarea id="mensaje" name="mensaje" rows="4"></textarea>
         </div>
 
-        <button type="submit" class="btn-primary btn-submit">
-          Enviar Confirmación
-        </button>
+        <button type="submit" class="btn-primary btn-submit" id="form-boton">
+  Enviar Confirmación
+</button>
+
       </form>
     </section>
 
@@ -379,12 +380,9 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p class="footer-heart" aria-hidden="true">♥</p>
-    <p class="footer-text" id="footer-names">Juandi &amp; Dani</p>
-    <p class="footer-text" id="footer-date-location">
-      30 de Noviembre, 2025 &#183; Santa Marta, Colombia
-    </p>
-    <p class="footer-madeby">Hecho con ♥ por Juandi &amp; Dani</p>
+    <p class="footer-text" id="footer-names">Juandi & Dani</p>
+<p class="footer-text" id="footer-date-location">30 de Noviembre, 2025 · Santa Marta, Colombia</p>
+<p class="footer-madeby" id="footer-madeby">Hecho con ♥ por Juandi & Dani</p>
   </footer>
 
   <!-- JS -->
