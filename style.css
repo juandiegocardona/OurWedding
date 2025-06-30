@@ -459,7 +459,7 @@ body {
 
 /* Viajes */
 .viajes-section {
-  background-color: #fef9f5;
+  
   padding-top: 4rem;
   padding-bottom: 4rem;
   border-radius: 12px;
@@ -800,15 +800,23 @@ body {
   color: #d8ca9f;
 }
 div.scroll-container {
-  background-color: #333;
-  overflow: auto;
+  background-color: white;
+  overflow-x: auto;
   white-space: nowrap;
-  padding: 10px;
+  padding: 20px 10px;
+  scroll-behavior: smooth;
 }
 
 div.scroll-container img {
+  height: 450px; /* más grande */
+  width: auto;
   padding: 10px;
+  object-fit: contain; /* muestra la imagen completa */
+  border-radius: 16px;
+  box-shadow: 0 6px 16px var(--color-shadow);
+  display: inline-block;
 }
+
 /* Responsive */
 @media (max-width: 900px) {
   .nav-menu {
@@ -818,6 +826,9 @@ div.scroll-container img {
   .banner-container {
     flex-direction: column;
   }
+  .scroll-container {
+  text-align: center;
+}
 
   .countdown-container {
     flex-direction: column;

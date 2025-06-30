@@ -12,27 +12,23 @@ const translations = {
     'event-date': '30 de Noviembre, 2025',
     'event-location': 'Santa Marta, Colombia',
 
-    'nosotros-title': 'Nosotros',
-    'nosotros-subtitle': 'Nuestra Historia de Amor',
-    'nosotros-text':
-      'Dos corazones, un viaje. Nos conocimos en 2019 y hemos sido inseparables desde entonces. Después de años de aventuras, risas y crecimiento juntos, estamos listos para dar el siguiente paso y celebrar nuestro amor con todos ustedes en la hermosa ciudad de Santa Marta.',
-    'nosotros-names': 'Juandi & Dani',
-    'nosotros-date': 'Juntos desde 2019',
+    'nosotros-title': '¡Sí, nos casamos!',
+    'nosotros-text':'Desde el momento en que nos conocimos, nuestros corazones se unieron y hemos sido inseparables desde entonces. Han sido seis años llenos de amor, risas, aventuras y crecimiento compartido. Hoy, con muchísima ilusión, estamos listos para dar el siguiente paso y celebrar nuestro amor con ustedes, oficializando nuestra historia para siempre frente al mar.',
 
-    'detalles-title': 'Detalles del Evento',
+    'detalles-title': 'Nuestra Boda',
     'ceremonia-title': 'Ceremonia',
     'ceremonia-time': '4:00 PM',
-    'ceremonia-place': 'En la Playa',
+    'ceremonia-place': 'Playa',
     'recepcion-title': 'Recepción',
     'recepcion-time': '6:00 PM',
     'recepcion-place': 'Casa Kapikua',
-    'lugar-title': 'Casa Kapikua',
+    'lugar-title': ' Lugar: Casa Kapikua',
     'lugar-location': 'Km 20 vía Santa Marta – Ciénaga, Santa Marta, Colombia',
 
     'dresscode-title': 'Código de Vestimenta',
-    'dresscode-text':
-      'Se reserva color blanco y azul.\nDamas: vestido largo de un solo tono sin estampados, calzado con tacón grueso o sandalias planas (ceremonia será en la playa).\nHombres: guayabera o camisa de lino.',
-
+    'dresscode-text1':'Se reserva el color blanco y azul.',
+    'dresscode-text2':'Damas: Vestido largo de un solo tono sin estampados, calzado con tacón grueso o sandalias planas (la ceremonia será en la playa).',
+    'dresscode-text3':'Caballeros: Guayabera o camisa de lino.',
     'weather-title': 'Clima',
     'weather-text': 'Espera clima tropical cálido con temperaturas alrededor de 30 °C. Se recomiendan telas ligeras.',
 
@@ -41,31 +37,37 @@ const translations = {
     'aeropuerto-title': 'Aeropuerto Más Cercano',
     'aeropuerto-text': 'Aeropuerto Internacional Simón Bolívar (SMR)',
     'transporte-title': 'Transporte',
-    'transporte-text': 'Se organizará transporte desde el aeropuerto y local para huéspedes de fuera de la ciudad.',
+    'transporte-text': 'Se recomienda hacer uso de medios de transporte como Uber, taxi o transporte privado',
     'santamarta-title': 'Santa Marta',
     'santamarta-text': 'Perla de América, hermosa ciudad costera',
 
     'hoteles-title': 'Hoteles Recomendados',
-    'hotel1-name': 'Hotel Casa San Agustín',
-    'hotel1-desc': 'Hotel colonial de lujo en el centro histórico',
-    'hotel2-name': 'Hotel Boutique Don Pepe',
-    'hotel2-desc': 'Hotel boutique con comodidades modernas',
-    'hotel3-name': 'Casa Verde Hotel',
-    'hotel3-desc': 'Hotel ecológico cerca de la playa',
+    'hotel1-name': 'Airbnb',
+    'hotel1-desc': 'Reserva tu estancia y disfruta de una experiencia memorable.',
+    'hotel2-name': 'GHL',
+    'hotel2-desc': 'El Hotel está ubicado a unos 3km de Kapikua.',
+    'hotel3-name': 'Wyndham',
+    'hotel3-desc': 'Está ubicado unos 5 km de Kapikua.',
+    'hotel4-name': 'Zuana Beach Resort',
+    'hotel4-desc': 'Está ubicado a 6km de Kapikua.',
+    'hotel5-name': 'Decameron',
+    'hotel5-desc': 'Está ubicado a 1km de Kapikua.',
+    'hotel6-name': 'Hilton',
+    'hotel6-desc': 'Está ubicado a 6km de Kapikua.',
 
     'regalos-title': 'Lista de Regalos',
     'regalos-subtitle': 'Tu Presencia es Nuestro Regalo',
     'regalos-text':
       'Tu presencia en nuestra boda es el regalo más grande de todos. Para aquellos que deseen honrarnos con un regalo, hemos creado estas opciones:',
     'lluvia-title': 'Lluvia de Sobres',
-    'lluvia-text': 'Tu generosa contribución nos ayudará a comenzar nuestra nueva vida juntos.',
-    'fondo-title': 'Fondo de Luna de Miel',
-    'fondo-text': 'Ayúdanos a crear recuerdos en nuestra aventura de luna de miel.',
+    'lluvia-text': 'El día de la boda tendremos un espacio especial para recibir tu sobre con todo nuestro cariño.',
+    'fondo-title': 'Transferencia Digital',
+    'fondo-text': 'También puedes hacernos un aporte desde donde estés a través de este link de pago.',
 
     'confirmacion-title': 'Confirmación',
-    'confirmacion-subtitle': 'Por favor responde antes del 1 de Octubre, 2025',
+    'confirmacion-subtitle': 'Por favor completa tu confirmación antes del 1 de octubre de 2025. Para ayudarnos con la organización, te pedimos que cada persona registre su asistencia por separado, incluso si hacen parte del mismo grupo o familia.',
 
-    'contacto-title': 'Contáctanos',
+    'contacto-title': '¿Preguntas?',
     'contacto-subtitle': '¿Preguntas? Estamos Aquí para Ayudar'
   },
   en: {
@@ -130,7 +132,7 @@ const translations = {
     'confirmacion-title': 'RSVP',
     'confirmacion-subtitle': 'Please respond by October 1, 2025',
 
-    'contacto-title': 'Contact Us',
+    'contacto-title': 'Questions?',
     'contacto-subtitle': 'Questions? We Are Here to Help'
   }
 };
