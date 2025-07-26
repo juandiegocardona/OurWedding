@@ -1,6 +1,8 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap');
 
+
+
 /* Colors and variables */
 :root {
   --color-primary: #1f3c72;
@@ -13,7 +15,7 @@
   --color-accent-light: #d9e6fb;
   --color-shadow: rgba(74, 144, 226, 0.15);
   --font-serif: 'Playfair Display', serif;
-  --font-sans: 'Open Sans', sans-serif;
+  --font-sans: 'Playfair Display', serif;
   --transition-speed: 0.3s;
 }
 
@@ -24,7 +26,7 @@
 body {
   margin: 0;
   font-family: var(--font-sans);
-  background-color: var(--color-bg-light);
+  background-color: #ECF4FF;
   color: var(--color-text-dark);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -258,7 +260,7 @@ body {
 .section-subtitle {
   font-weight: 600;
   font-size: 1.2rem;
-  color: var(--color-primary-light);
+  color: var(--color-text-dark);
   margin-top: 0.3rem;
 }
 
@@ -287,9 +289,9 @@ body {
 
 #nosotros-text {
   flex: 1 1 360px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
-  color: var(--color-text-muted);
+  color: var(--color-text-dark); /* <== este es el azul oscuro del título */
 }
 
 .nosotros-card {
@@ -432,7 +434,11 @@ body {
   border-radius: 12px;
   padding: 2rem 1.5rem;
   flex: 1 1 320px;
+  text-align: center;
+  font-size: 1.2rem;
+  
 }
+
 
 .dress-code-card .icon,
 .weather-card .icon {
@@ -454,7 +460,7 @@ body {
 .weather-card p {
   font-weight: 400;
   color: var(--color-text-muted);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* Viajes */
@@ -557,32 +563,45 @@ body {
   text-decoration: underline;
   outline: none;
 }
-
-/* Regalos */
-.regalos-cards {
-  max-width: 1024px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.regalos-cards p {
+.regalos-text {
   font-weight: 400;
-  font-size: 1.1rem;
+  align-content: center;
+  font-size: 1.2rem;
   max-width: 720px;
   margin: 0 auto 3rem auto;
-  color: var(--color-text-muted);
+  color: var(--color-text-dark);
+}
+/* Regalos */
+.regalos-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.regalos-cards p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  max-width: 720px;
+  margin: 0 auto 3rem auto;
+  color: var(--color-text-dark);
 }
 
+
+
 .regalo-card {
-  background: var(--color-accent-light);
+  background: #fff !important;
   border-radius: 12px;
   box-shadow: 0 8px 24px var(--color-shadow);
-  padding: 2.5rem 2rem;
-  margin: 0 1rem;
-  display: inline-block;
-  vertical-align: top;
-  max-width: 320px;
+  padding: 2rem 1.5rem;
+  flex: 1 1 320px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .gift-icon-lg {
@@ -800,7 +819,7 @@ body {
   color: #d8ca9f;
 }
 .scroll-container {
-  background-color: white;
+ background-color: #ECF4FF;
   overflow-x: auto;
   white-space: nowrap;
   scroll-behavior: smooth;
@@ -821,7 +840,7 @@ body {
 }
 
 div.scroll-container {
-  background-color: white;
+  background-color:#ECF4FF;
   overflow-x: auto;
   white-space: nowrap;
   padding: 20px 10px;
@@ -852,6 +871,8 @@ div.scroll-container img {
 
 
 .preboda-text{
+  font-size: 1.18rem;
+  text-align: center;
   flex: 1 1 400px;
   min-height: 380px;
   background: var(--color-bg-lighter);
