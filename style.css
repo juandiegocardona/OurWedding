@@ -872,7 +872,7 @@ div.scroll-container img {
 }
 
 
-.preboda-text{
+.preboda-text {
   font-size: 1.18rem;
   text-align: center;
   flex: 1 1 400px;
@@ -884,6 +884,13 @@ div.scroll-container img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; /* 🆕 Agrega esto */
+  text-align: center;
+}
+
+#preboda-text {
+  margin: 0;             /* 🆕 Quita márgenes inesperados */
+  line-height: 1.6;
 }
 .preboda-map {
   flex: 1 1 400px;
@@ -1090,3 +1097,9 @@ div.scroll-container img {
   }
 }
 
+@media (max-width: 600px) {
+  .preboda-text {
+    padding: 1.5rem 1rem;
+    min-height: auto;
+  }
+}
