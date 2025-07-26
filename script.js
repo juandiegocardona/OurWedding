@@ -24,7 +24,7 @@ const translations = {
 
     // Pre-boda
     'preboda-title': 'Pre-boda',
-    'preboda-text': 'Sabemos que muchos están viajando desde lejos para acompañarnos y eso significa el mundo para nosotros. Si llegas desde el sábado, nos encantaría compartir un evento de bienvenida. Una oportunidad para reencontrarnos y empezar a celebrar juntos.<br><br><strong>Fecha:</strong> Sábado 29 Noviembre del 2025<br><strong>Lugar:</strong> Por Definir<br><strong>Hora:</strong> 5:00 PM',
+    'preboda-text': 'Sabemos que muchos están viajando desde lejos, y eso significa mucho para nosotros. Si llegas el sábado, nos encantaría que nos acompañes a una reunión informal para empezar a celebrar juntos. Será un espacio relajado para compartir un buen momento. En esta ocasión, cada quien cubrirá lo suyo.<br><br><strong>Fecha:</strong> Sábado 29 Noviembre del 2025<br><strong>Lugar:</strong> Por Definir<br><strong>Hora:</strong> 5:00 PM',
 
     // Detalles boda
     'place-title':'Lugar',
@@ -47,6 +47,8 @@ const translations = {
     'dresscode-text3': '<strong>Caballeros:</strong> Guayabera o camisa de lino.',
     'weather-title': 'Clima',
     'weather-text': 'Espera clima tropical cálido con temperaturas alrededor de 30 °C. Se recomiendan telas ligeras.',
+     'link-damas': 'Ejemplo Damas',
+  'link-caballeros': 'Ejemplo Caballeros',
 
     // Viajes y hospedaje
     'viajes-title': 'Viajes y Hospedaje',
@@ -131,7 +133,7 @@ const translations = {
 
     // Pre-boda
     'preboda-title': 'Pre-Wedding',
-    'preboda-text': 'We know many of you are traveling from afar, and that means the world to us. If you arrive on Saturday, we’d love to share a welcome gathering — a chance to reconnect and start the celebration together.<br><br><strong>Date:</strong> Saturday, November 29, 2025<br><strong>Place:</strong> To be confirmed<br><strong>Time:</strong> 5:00 PM',
+    'preboda-text': 'We know many of you are traveling from afar, and that means a lot to us. If you arrive by Saturday, we’d love for you to join us for a casual gathering to kick off the celebration. It’ll be a relaxed time to enjoy together — everyone will cover their own expenses.<br><br><strong>Date:</strong> Saturday, November 29, 2025<br><strong>Place:</strong> To be confirmed<br><strong>Time:</strong> 5:00 PM',
 
     // Detalles boda
     'detalles-title': 'Our Wedding',
@@ -154,6 +156,9 @@ const translations = {
     'dresscode-text3': '<strong>Gentlemen:</strong>Guayabera or linen shirt.',
     'weather-title': 'Weather',
     'weather-text': 'Expect warm tropical weather around 30 °C. Lightweight fabrics are recommended.',
+    'link-damas': 'Ladies Example',
+  'link-caballeros': 'Gentlemen Example',
+    
 
     // Viajes y hospedaje
     'viajes-title': 'Travel & Stay',
