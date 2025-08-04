@@ -1147,6 +1147,21 @@ div.scroll-container img {
   80% { opacity: 1; }
   100% { opacity: 0; display: none; }
 }
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  display: flex;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  position: relative;
+}
+.scroll-container img {
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  height: 400px;
+  object-fit: cover;
+}
 
 .scroll-container::before,
 .scroll-container::after {
@@ -1169,4 +1184,35 @@ div.scroll-container img {
 .scroll-container::before {
   left: 0;
 }
+
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+  background-color: #ECF4FF;
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLoop 60s linear infinite;
+}
+
+.scroll-track img {
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px var(--color-shadow);
+  margin-right: 1rem;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 

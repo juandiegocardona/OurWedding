@@ -366,23 +366,28 @@ document.getElementById('confirmacion-form').addEventListener('submit', function
     });
 });
 // Scroll automático tipo carrusel
+
+
 const scrollContainer = document.getElementById('photo-scroll');
-let scrollDirection = 1;
+let scrollDirection = 1; // 1: derecha, -1: izquierda
 
-setInterval(() => {
+function autoScroll() {
   if (!scrollContainer) return;
-  scrollContainer.scrollBy({
-    left: 1 * scrollDirection,
-    behavior: 'smooth'
-  });
 
-  // Cambia dirección si llega al final o principio
-  if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
-    scrollDirection = -1;
-  } else if (scrollContainer.scrollLeft <= 0) {
-    scrollDirection = 1;
+  scrollContainer.scrollLeft += scrollDirection * 1.2; // velocidad ajustable
+
+  // Cambia de dirección cuando llega al final o inicio
+  if (
+    scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth ||
+    scrollContainer.scrollLeft <= 0
+  ) {
+    scrollDirection *= -1;
   }
-}, 50); // cada 50ms mueve un poco
 
+  requestAnimationFrame(autoScroll);
+}
+
+// Inicia animación sin pausarse jamás
+requestAnimationFrame(autoScroll);
 
 
