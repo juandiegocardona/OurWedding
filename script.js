@@ -1,6 +1,6 @@
 const weddingDate = new Date('2025-11-30T00:00:00');
 const countdownEl = document.getElementById('countdown');
-const toggleBtn = document.getElementById('lang-toggle');
+
 const translations = {
   es: {
     // Menú
@@ -10,7 +10,7 @@ const translations = {
     'nav-boda': 'Nuestra Boda',
     'nav-datos': 'Datos de Interés',
     'nav-rsvp': 'RSVP',
-    'lang-toggle': '🌐 ES',
+    //'lang-toggle': '🌐 ES',
 
     // Hero
     'event-label': 'La Boda de',
@@ -119,7 +119,7 @@ const translations = {
     'nav-boda': 'Our Wedding',
     'nav-datos': 'Info',
     'nav-rsvp': 'RSVP',
-    'lang-toggle': '🌐 EN',
+    //'lang-toggle': '🌐 EN',
 
     // Hero
     'event-label': 'The Wedding of',
@@ -247,6 +247,23 @@ function updateCountdown() {
   }
 }
 
+function updateLanguage() {
+  for (const id in translations[currentLang]) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.innerHTML = translations[currentLang][id];
+    }
+  }
+
+  const label = document.getElementById('lang-label');
+  if (label) {
+    label.textContent = currentLang === 'es' ? 'Idioma:' : 'Language:';
+  }
+
+  updateCountdown();
+}
+
+
 function switchLanguage() {
   currentLang = currentLang === 'es' ? 'en' : 'es';
 
@@ -262,7 +279,16 @@ function switchLanguage() {
   updateCountdown();
 }
 
-toggleBtn.addEventListener('click', switchLanguage);
+document.querySelectorAll('.flag-icon').forEach(flag => {
+  flag.addEventListener('click', () => {
+    const selectedLang = flag.getAttribute('data-lang');
+    if (selectedLang !== currentLang) {
+      currentLang = selectedLang;
+      updateLanguage();
+    }
+  });
+});
+
 
 // Iniciar bucle del contador
 setInterval(updateCountdown, 1000);

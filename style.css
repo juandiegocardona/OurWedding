@@ -1103,3 +1103,35 @@ div.scroll-container img {
     min-height: auto;
   }
 }
+.lang-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+}
+
+.lang-label {
+  white-space: nowrap;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.flag-icon {
+  width: 24px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.flag-icon:hover,
+.flag-icon:focus-visible {
+  transform: scale(1.1);
+}
+
