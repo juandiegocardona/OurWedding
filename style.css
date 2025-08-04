@@ -1138,8 +1138,8 @@ div.scroll-container img {
   text-align: center;
   font-size: 1rem;
   color: var(--color-text-muted);
-  margin-top: 1rem;
-  animation: hintFade 4s ease forwards;
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
 }
 
 @keyframes hintFade {
@@ -1148,20 +1148,24 @@ div.scroll-container img {
   100% { opacity: 0; display: none; }
 }
 .scroll-container {
+  display: flex;
   overflow-x: auto;
   white-space: nowrap;
   scroll-behavior: smooth;
-  display: flex;
   gap: 1rem;
+  padding: 20px 10px;
   scroll-snap-type: x mandatory;
   position: relative;
 }
+
 .scroll-container img {
-  scroll-snap-align: center;
-  flex-shrink: 0;
   height: 400px;
   object-fit: cover;
+  border-radius: 16px;
+  scroll-snap-align: center;
+  flex-shrink: 0;
 }
+
 
 .scroll-container::before,
 .scroll-container::after {
@@ -1207,6 +1211,38 @@ div.scroll-container img {
 }
 
 @keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #ECF4FF;
+  margin-top: 1rem;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-carousel 80s linear infinite;
+}
+
+.carousel-track img {
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px var(--color-shadow);
+  margin-right: 1rem;
+}
+
+/* Animación infinita */
+@keyframes scroll-carousel {
   0% {
     transform: translateX(0);
   }

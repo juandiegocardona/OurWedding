@@ -365,29 +365,3 @@ document.getElementById('confirmacion-form').addEventListener('submit', function
       alert('Error de red. Intenta más tarde.');
     });
 });
-// Scroll automático tipo carrusel
-
-
-const scrollContainer = document.getElementById('photo-scroll');
-let scrollDirection = 1; // 1: derecha, -1: izquierda
-
-function autoScroll() {
-  if (!scrollContainer) return;
-
-  scrollContainer.scrollLeft += scrollDirection * 1.2; // velocidad ajustable
-
-  // Cambia de dirección cuando llega al final o inicio
-  if (
-    scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth ||
-    scrollContainer.scrollLeft <= 0
-  ) {
-    scrollDirection *= -1;
-  }
-
-  requestAnimationFrame(autoScroll);
-}
-
-// Inicia animación sin pausarse jamás
-requestAnimationFrame(autoScroll);
-
-
