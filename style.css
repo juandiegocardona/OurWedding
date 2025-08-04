@@ -1134,4 +1134,39 @@ div.scroll-container img {
 .flag-icon:focus-visible {
   transform: scale(1.1);
 }
+.scroll-hint {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin-top: 1rem;
+  animation: hintFade 4s ease forwards;
+}
+
+@keyframes hintFade {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+
+.scroll-container::before,
+.scroll-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 20px;
+  z-index: 2;
+  background: linear-gradient(to right, #ECF4FF, transparent);
+  pointer-events: none;
+}
+
+.scroll-container::after {
+  right: 0;
+  background: linear-gradient(to left, #ECF4FF, transparent);
+}
+
+.scroll-container::before {
+  left: 0;
+}
 

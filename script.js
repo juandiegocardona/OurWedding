@@ -24,7 +24,7 @@ const translations = {
 
     // Pre-boda
     'preboda-title': 'Pre-boda',
-    'preboda-text': 'Sabemos que muchos están viajando desde lejos, y eso significa mucho para nosotros. Si llegas el sábado, nos encantaría que nos acompañes a una reunión informal para empezar a celebrar juntos. Será un espacio relajado para compartir un buen momento. En esta ocasión, cada quien cubrirá lo suyo.<br><br><strong>Fecha:</strong> Sábado 29 Noviembre del 2025<br><strong>Lugar:</strong> Por Definir<br><strong>Hora:</strong> 5:00 PM',
+    'preboda-text': 'Sabemos que muchos están viajando desde lejos, y eso significa mucho para nosotros. Si llegas el sábado, nos encantaría que nos acompañes a una reunión informal para empezar a celebrar juntos. Será un espacio relajado para compartir un buen momento. En la preboda, cada quien pagará su cuenta.<br><br><strong>Fecha:</strong> Sábado 29 Noviembre del 2025<br><strong>Lugar:</strong> Por Definir<br><strong>Hora:</strong> 5:00 PM',
 
     // Detalles boda
     'place-title':'Lugar',
@@ -43,12 +43,12 @@ const translations = {
     // Código de vestimenta y clima
     'dresscode-title': 'Dress Code',
     'dresscode-text1': 'Se reserva color blanco y azul.',
-    'dresscode-text2': '<strong>Damas:</strong> Vestido largo de un solo tono sin estampados, calzado con tacón grueso o sandalias planas (la ceremonia será en la playa).',
-    'dresscode-text3': '<strong>Caballeros:</strong> Guayabera o camisa de lino.',
+    'dresscode-text2': '<strong>Damas:</strong> Se reserva color blanco y azul. Vestido largo de un solo tono sin estampados, calzado con tacón grueso o sandalias planas (la ceremonia será en la playa).',
+    'dresscode-text3': '<strong>Caballeros: </strong> Guayabera o camisa de lino. Se reserva el color azul. ',
     'weather-title': 'Clima',
     'weather-text': 'Espera clima tropical cálido con temperaturas alrededor de 30 °C. Se recomiendan telas ligeras.',
-     'link-damas': 'Ejemplo Damas',
-  'link-caballeros': 'Ejemplo Caballeros',
+     'link-damas': 'Link ejemplos Damas',
+  'link-caballeros': 'Link ejemplos Caballeros',
 
     // Viajes y hospedaje
     'viajes-title': 'Viajes y Hospedaje',
@@ -133,7 +133,7 @@ const translations = {
 
     // Pre-boda
     'preboda-title': 'Pre-Wedding',
-    'preboda-text': 'We know many of you are traveling from afar, and that means a lot to us. If you arrive by Saturday, we’d love for you to join us for a casual gathering to kick off the celebration. It’ll be a relaxed time to enjoy together — everyone will cover their own expenses.<br><br><strong>Date:</strong> Saturday, November 29, 2025<br><strong>Place:</strong> To be confirmed<br><strong>Time:</strong> 5:00 PM',
+    'preboda-text': 'We know many of you are traveling from afar, and that means a lot to us. If you arrive by Saturday, we’d love for you to join us for a casual gathering to kick off the celebration. It’ll be a relaxed time to enjoy together — in the prewedding everyone will cover their own expenses.<br><br><strong>Date:</strong> Saturday, November 29, 2025<br><strong>Place:</strong> To be confirmed<br><strong>Time:</strong> 5:00 PM',
 
     // Detalles boda
     'detalles-title': 'Our Wedding',
@@ -152,12 +152,12 @@ const translations = {
     // Código de vestimenta y clima
     'dresscode-title': 'Dress Code',
     'dresscode-text1': 'White and blue colors reserved.',
-    'dresscode-text2': '<strong>Ladies:</strong> Long solid-colored dress (no prints), chunky heels or flat sandals (ceremony on the beach).',
-    'dresscode-text3': '<strong>Gentlemen:</strong>Guayabera or linen shirt.',
+    'dresscode-text2': '<strong>Ladies:</strong> White and blue colors reserved. Long solid-colored dress (no prints), chunky heels or flat sandals (ceremony on the beach).',
+    'dresscode-text3': '<strong>Gentlemen: </strong> Guayabera or linen shirt. Blue color reserved.',
     'weather-title': 'Weather',
     'weather-text': 'Expect warm tropical weather around 30 °C. Lightweight fabrics are recommended.',
-    'link-damas': 'Ladies Example',
-  'link-caballeros': 'Gentlemen Example',
+    'link-damas': 'Ladies examples Link',
+  'link-caballeros': 'Gentlemen examples Link',
     
 
     // Viajes y hospedaje
@@ -365,5 +365,24 @@ document.getElementById('confirmacion-form').addEventListener('submit', function
       alert('Error de red. Intenta más tarde.');
     });
 });
+// Scroll automático tipo carrusel
+const scrollContainer = document.getElementById('photo-scroll');
+let scrollDirection = 1;
+
+setInterval(() => {
+  if (!scrollContainer) return;
+  scrollContainer.scrollBy({
+    left: 1 * scrollDirection,
+    behavior: 'smooth'
+  });
+
+  // Cambia dirección si llega al final o principio
+  if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
+    scrollDirection = -1;
+  } else if (scrollContainer.scrollLeft <= 0) {
+    scrollDirection = 1;
+  }
+}, 50); // cada 50ms mueve un poco
+
 
 
