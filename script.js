@@ -27,6 +27,9 @@ const translations = {
     'preboda-text': 'Sabemos que muchos están viajando desde lejos, y eso significa mucho para nosotros. Si llegas el sábado, nos encantaría que nos acompañes a una reunión informal para empezar a celebrar juntos. Será un espacio relajado para compartir un buen momento. En la preboda, cada quien pagará su cuenta.<br><br><strong>Fecha:</strong> Sábado 29 Noviembre del 2025<br><strong>Lugar:</strong> Por Definir<br><strong>Hora:</strong> 5:00 PM',
 
     // Detalles boda
+    
+    'date-title':'Fecha',
+    'date-time':'Domingo, Noviembre 30 de 2025',
     'place-title':'Lugar',
     'place-time':'Casa Kapikua',
     'place-description':'Km 20 vía Santa Marta – Ciénaga, Santa Marta, Colombia',
@@ -137,6 +140,8 @@ const translations = {
 
     // Detalles boda
     'detalles-title': 'Our Wedding',
+     'date-title':'Date',
+    'date-time':'Sunday, November 30th, 2025',
     'place-title':'Location',
     'place-time':'Casa Kapikua',
     'place-description':'Km 20 vía Santa Marta – Ciénaga, Santa Marta, Colombia',
