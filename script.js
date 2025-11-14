@@ -24,7 +24,7 @@ const translations = {
 
     // Pre-boda
     'preboda-title': 'Pre-boda',
-    'preboda-text': 'Sabemos que muchos están viajando desde lejos, y eso significa mucho para nosotros. Si llegas el sábado, nos encantaría que nos acompañes a una reunión informal para empezar a celebrar juntos. Será un espacio relajado para compartir un buen momento. En la preboda, cada quien pagará su cuenta.<br><br><strong>Fecha:</strong> Sábado 29 Noviembre del 2025<br><strong>Lugar:</strong> Por Definir<br><strong>Hora:</strong> 5:00 PM',
+    'preboda-text': 'Sabemos que muchos están viajando desde lejos, y eso significa mucho para nosotros. Si llegas el sábado, nos encantaría que nos acompañes a una reunión informal para empezar a celebrar juntos. Será un espacio relajado para compartir un buen momento. En la preboda, cada quien pagará su cuenta.<br><br><strong>Fecha:</strong> Sábado 29 Noviembre del 2025<br><strong>Lugar:</strong> BK - Burukuka Resto Bar <br><strong>Hora:</strong> 5:00 PM',
 
     // Detalles boda
     
@@ -35,7 +35,7 @@ const translations = {
     'place-description':'Km 20 vía Santa Marta – Ciénaga, Santa Marta, Colombia',
     'detalles-title': 'Nuestra Boda',
     'ceremonia-title': 'Ceremonia',
-    'ceremonia-time': '4:00 PM',
+    'ceremonia-time': '3:30 PM',
     'ceremonia-place': 'En la Playa',
     'recepcion-title': 'Recepción',
     'recepcion-time': '6:00 PM',
@@ -136,7 +136,7 @@ const translations = {
 
     // Pre-boda
     'preboda-title': 'Pre-Wedding',
-    'preboda-text': 'We know many of you are traveling from afar, and that means a lot to us. If you arrive by Saturday, we’d love for you to join us for a casual gathering to kick off the celebration. It’ll be a relaxed time to enjoy together — in the prewedding everyone will cover their own expenses.<br><br><strong>Date:</strong> Saturday, November 29, 2025<br><strong>Place:</strong> To be confirmed<br><strong>Time:</strong> 5:00 PM',
+    'preboda-text': 'We know many of you are traveling from afar, and that means a lot to us. If you arrive by Saturday, we’d love for you to join us for a casual gathering to kick off the celebration. It’ll be a relaxed time to enjoy together — in the prewedding everyone will cover their own expenses.<br><br><strong>Date:</strong> Saturday, November 29, 2025<br><strong>Place:</strong> BK - Burukuka Resto Bar<br><strong>Time:</strong> 5:00 PM',
 
     // Detalles boda
     'detalles-title': 'Our Wedding',
@@ -146,7 +146,7 @@ const translations = {
     'place-time':'Casa Kapikua',
     'place-description':'Km 20 vía Santa Marta – Ciénaga, Santa Marta, Colombia',
     'ceremonia-title': 'Ceremony',
-    'ceremonia-time': '4:00 PM',
+    'ceremonia-time': '3:30 PM',
     'ceremonia-place': 'On the Beach',
     'recepcion-title': 'Reception',
     'recepcion-time': '6:00 PM',
