@@ -88,9 +88,9 @@ const translations = {
     'regalos-text': 'Tu presencia en nuestra boda es el regalo más grande de todos. Para aquellos que deseen honrarnos con un regalo, hemos creado estas opciones:',
     'lluvia-title': 'Lluvia de Sobres',
     'lluvia-text': 'El día de la boda tendremos un espacio especial para recibir tu sobre con todo nuestro cariño.',
-    'fondo-title': 'Transferencia Digital',
-    'fondo-text': 'También puedes hacernos un aporte desde donde estés a través de este link de pago.',
-    'fondo-btn': 'Regalo Paypal',
+    'fondo-title': 'Lista de Regalos en Amazon',
+    'fondo-text': 'También puedes enviarnos algún detalle desde nuestra lista de regalos en Amazon.',
+    'fondo-btn': 'Regalo Amazon',
 
     // Confirmación
     'confirmacion-title': 'Confirmación',
@@ -200,9 +200,9 @@ const translations = {
     'regalos-text': 'Your presence at our wedding is the greatest gift. If you would like to honor us with a present, here are two options:',
     'lluvia-title': 'Envelope Shower',
     'lluvia-text': 'We’ll have a special space at the wedding to receive your envelope with love.',
-    'fondo-title': 'Digital Contribution',
-    'fondo-text': 'You can also make a contribution from anywhere through this payment link.',
-    'fondo-btn': 'Paypal Gift',
+    'fondo-title': 'Amazon Registry',
+    'fondo-text': 'You can also send us a gift from our Amazon wedding registry.',
+    'fondo-btn': 'Amazon Gift',
 
     // Confirmación
     'confirmacion-title': 'RSVP',
